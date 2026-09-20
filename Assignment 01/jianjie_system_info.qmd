@@ -1,0 +1,50 @@
+---
+title: "BU AD688 System Information"
+author: "Jianjie Li"
+date: today
+format: docx
+jupyter: python3
+execute:
+  echo: true
+  warning: false
+---
+
+## Purpose
+
+This document verifies the cloud computing environment used for BU AD688 Assignment 01. It was generated on the assigned AWS Academy EC2 instance using Quarto and Python.
+
+## System Information
+
+```{python}
+import platform
+import sys
+import psutil
+from importlib.metadata import version
+
+memory = psutil.virtual_memory()
+disk = psutil.disk_usage("/")
+
+system_info = {
+    "Platform": "AWS EC2",
+    "Operating system": platform.system(),
+    "OS release": platform.release(),
+    "OS version": platform.version(),
+    "Machine architecture": platform.machine(),
+    "Python version": sys.version.split()[0],
+    "PySpark version": version("pyspark"),
+    "psutil version": version("psutil"),
+    "Logical CPU cores": psutil.cpu_count(logical=True),
+    "Physical CPU cores": psutil.cpu_count(logical=False),
+    "Total memory (GiB)": round(memory.total / (1024 ** 3), 2),
+    "Available memory (GiB)": round(memory.available / (1024 ** 3), 2),
+    "Root disk size (GiB)": round(disk.total / (1024 ** 3), 2),
+    "Root disk free (GiB)": round(disk.free / (1024 ** 3), 2),
+}
+
+for component, value in system_info.items():
+    print(f"{component}: {value}")
+```
+
+## Reproducibility
+
+The report source is saved as `jianjie_system_info.qmd`. The Word document is rendered from this source with Quarto. Python dependencies are installed in a virtual environment on the EC2 instance.
