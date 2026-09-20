@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "BU AD688 Assignment 01",
+    "section": "",
+    "text": "This website documents my BU AD688 cloud computing environment and reproducible data science setup.\nThe work was completed on an AWS Academy EC2 instance running Ubuntu. The environment includes Python, Java, PySpark, Git, GitHub SSH authentication, and Quarto."
+  },
+  {
+    "objectID": "index.html#welcome",
+    "href": "index.html#welcome",
+    "title": "BU AD688 Assignment 01",
+    "section": "",
+    "text": "This website documents my BU AD688 cloud computing environment and reproducible data science setup.\nThe work was completed on an AWS Academy EC2 instance running Ubuntu. The environment includes Python, Java, PySpark, Git, GitHub SSH authentication, and Quarto."
+  },
+  {
+    "objectID": "index.html#environment-verification",
+    "href": "index.html#environment-verification",
+    "title": "BU AD688 Assignment 01",
+    "section": "Environment Verification",
+    "text": "Environment Verification\nThe following Python code reports key components of the environment.\n\nimport platform\nimport sys\nfrom importlib.metadata import version\n\nenvironment = {\n    \"Platform\": \"AWS EC2\",\n    \"Operating system\": platform.platform(),\n    \"Python version\": sys.version.split()[0],\n    \"PySpark version\": version(\"pyspark\"),\n    \"Course\": \"BU AD688\",\n}\n\nfor component, value in environment.items():\n    print(f\"{component}: {value}\")\n\nPlatform: AWS EC2\nOperating system: Linux-6.17.0-1017-aws-x86_64-with-glibc2.39\nPython version: 3.12.3\nPySpark version: 4.0.4\nCourse: BU AD688"
+  },
+  {
+    "objectID": "index.html#reproducibility",
+    "href": "index.html#reproducibility",
+    "title": "BU AD688 Assignment 01",
+    "section": "Reproducibility",
+    "text": "Reproducibility\nProject configuration and code are version controlled with Git and published through GitHub Pages. Private API credentials are stored in a local .env file that is excluded from Git."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "This website was created for BU AD688 Assignment 01. It demonstrates a reproducible cloud-based data science environment using AWS EC2, Python, PySpark, Git, GitHub, and Quarto."
+  },
+  {
+    "objectID": "about.html#project",
+    "href": "about.html#project",
+    "title": "About",
+    "section": "",
+    "text": "This website was created for BU AD688 Assignment 01. It demonstrates a reproducible cloud-based data science environment using AWS EC2, Python, PySpark, Git, GitHub, and Quarto."
+  },
+  {
+    "objectID": "about.html#environment",
+    "href": "about.html#environment",
+    "title": "About",
+    "section": "Environment",
+    "text": "Environment\n\nPlatform: AWS EC2\nOperating system: Ubuntu 24.04 LTS\nPython environment: Virtual environment\nBig data framework: PySpark 4.0\nVersion control: Git and GitHub\nPublishing platform: GitHub Pages"
+  },
+  {
+    "objectID": "about.html#author",
+    "href": "about.html#author",
+    "title": "About",
+    "section": "Author",
+    "text": "Author\nJianjie Li"
+  }
+]
