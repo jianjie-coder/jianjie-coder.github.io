@@ -1,0 +1,40 @@
+---
+title: "BU AD688 Assignment 01"
+subtitle: "Cloud Foundations and Big Data Pipelines"
+author: "Jianjie Li"
+jupyter: python3
+execute:
+  echo: true
+  warning: false
+---
+
+## Welcome
+
+This website documents my BU AD688 cloud computing environment and reproducible data science setup.
+
+The work was completed on an AWS Academy EC2 instance running Ubuntu. The environment includes Python, Java, PySpark, Git, GitHub SSH authentication, and Quarto.
+
+## Environment Verification
+
+The following Python code reports key components of the environment.
+
+```{python}
+import platform
+import sys
+from importlib.metadata import version
+
+environment = {
+    "Platform": "AWS EC2",
+    "Operating system": platform.platform(),
+    "Python version": sys.version.split()[0],
+    "PySpark version": version("pyspark"),
+    "Course": "BU AD688",
+}
+
+for component, value in environment.items():
+    print(f"{component}: {value}")
+```
+
+## Reproducibility
+
+Project configuration and code are version controlled with Git and published through GitHub Pages. Private API credentials are stored in a local `.env` file that is excluded from Git.

@@ -1,0 +1,20 @@
+---
+title: "About"
+---
+
+## Project
+
+This website was created for BU AD688 Assignment 01. It demonstrates a reproducible cloud-based data science environment using AWS EC2, Python, PySpark, Git, GitHub, and Quarto.
+
+## Environment
+
+- Platform: AWS EC2
+- Operating system: Ubuntu 24.04 LTS
+- Python environment: Virtual environment
+- Big data framework: PySpark 4.0
+- Version control: Git and GitHub
+- Publishing platform: GitHub Pages
+
+## Author
+
+Jianjie Li
